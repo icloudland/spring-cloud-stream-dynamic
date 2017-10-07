@@ -1,0 +1,18 @@
+server:
+  port: 7083
+
+spring:
+  application:
+    name: spring-cloud-steam-dynamic-source
+  cloud:
+    stream:
+      bindings:
+        customerId-1:
+          destination: customerId-1
+          group: dt-rmec-queue2
+
+  rabbitmq:
+    addresses: amqp://localhost:5672
+    username: guest
+    password: guest
+

@@ -1,0 +1,12 @@
+server:
+  port: 7082
+
+spring:
+  application:
+    name: spring-cloud-steam-dynamic-source
+
+  rabbitmq:
+    addresses: amqp://localhost:5672
+    username: guest
+    password: guest
+
